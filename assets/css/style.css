@@ -7,13 +7,14 @@ body {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom left, orange, white);
+    background: linear-gradient(to bottom left, rgb(255, 0, 0), white);
 }
 
 main {
     background-color: white;
     margin: 20px;
     padding: 25px;
+    border-radius: 10%;
 }
 
 h1 {
@@ -41,7 +42,7 @@ button {
 
 #flip,
 #roll {
-    background: linear-gradient(to bottom left, lightblue, white);
+    background: linear-gradient(to bottom left, rgb(26, 255, 0), white);
 }
 
 #flip:hover,
@@ -68,4 +69,8 @@ td {
 td {
     padding: 5px;
     font-weight: bold;
+}
+
+#penny-image {
+    min-height: 356px;
 }
