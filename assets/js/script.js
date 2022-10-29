@@ -8,8 +8,7 @@ let totalCount = 0;
 document.addEventListener("DOMContentLoaded", function () {
   // TODO: Add event listener and handler for flip and clear buttons
   document.querySelector("#flip").addEventListener("click", function () {
-    if (Math.random() > 0.499999999) {
-      //heads
+    if (Math.random() > 0.499999999) { //HEADS FLIPPER 
       document.querySelector("#penny-image").src =
         "assets/images/penny-heads.jpg";
       document.querySelector("#message").innerHTML = "You Flipped Heads!";
@@ -21,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#heads-percent").innerHTML = headsPercent + '%';
       document.querySelector("#tails").innerHTML = tailsCount;
       document.querySelector("#tails-percent").innerHTML = tailsPercent + '%';
-    } else {
-      //tails
+    } else { //TAILS FLIPPER
       document.querySelector("#penny-image").src =
         "assets/images/penny-tails.jpg";
       document.querySelector("#message").innerHTML = "You Flipped Tails!";
@@ -46,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.querySelector("#clear").addEventListener("click", function () {
     // Clear Button Click Handler
-    let headsCount = 0;
-    let headsPercent = "0%";
-    let tailsCount = 0;
-    let tailsPercent = "0%";
-    let totalCount = 0;
+    headsCount = 0;
+    headsPercent = "0%";
+    tailsCount = 0;
+    tailsPercent = "0%";
+    totalCount = 0;
     document.querySelector("#message").innerHTML = "Lets get Flipping!";
     document.querySelector("#penny-image").src =
       "assets/images/penny-heads.jpg";
